@@ -1,0 +1,10 @@
+#!/bin/bash
+
+box_name="local/xenial"
+set -e
+
+#export PACKER_LOG=1
+rm packer_virtualbox-iso_virtualbox.box || true
+packer build -only virtualbox-iso packer.json
+vagrant box remove ${box_name} || true
+vagrant box add ${box_name} packer_virtualbox-iso_virtualbox.box

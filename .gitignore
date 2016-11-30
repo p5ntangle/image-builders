@@ -1,0 +1,4 @@
+#local
+.vagrant/
+*.box
+packer_cache/
