@@ -19,6 +19,7 @@ the pub key in the scripts/setup.sh file.
 
 
 **Build the box.**
+
 1. Ensure that all the requirment have been installed (see requirements.txt)
 2. Switch to the vagrantboxes/release folder.
 3. Run the createbox script
